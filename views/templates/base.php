@@ -30,7 +30,7 @@
         <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
         <script src='<?php echo $Absolute_Path; ?>/js/onload.js'></script>
         <!-- ############ FONTS ############### -->
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
         <!-- ############ FONTS ############### -->
         <title><?php echo $Translation['title']; ?></title>
 </head>
@@ -39,8 +39,6 @@
         <!-- Incluimos el BOXMANAGER  -->
         <?php include_once VIEWS.'/BoxManager/BoxManager.php'; ?>
         <!-- BOXMANAGER -->
-
-        <div class="Big_Screens">
 
                 <?php include_once VIEWS.'/templates/base/header.php'; ?>
 
@@ -54,10 +52,8 @@
 
                 <?php include_once VIEWS.'/templates/base/footer.php'; ?>
 
-        </div>
-
-        <!--<script src='<?php //echo $Absolute_Path; ?>/js/jquery-2.2.4.min.js'></script> -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src='<?php echo $Absolute_Path; ?>/js/jquery-2.2.4.min.js'></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 
         <script src='<?php echo $Absolute_Path; ?>/js/main.js'></script>
 

@@ -70,6 +70,8 @@ else{
 
                 $Translation = $Translation[$lang];
         }
+
+        //echo DOMAIN." - ".DOMAIN_ES." - ".DOMAIN_EN."<br>";
 }
 
  ?>

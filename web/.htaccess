@@ -1,9 +1,9 @@
 RewriteEngine on
 
-RewriteCond %{HTTP_HOST} ^indanielweb.es [NC]
-RewriteRule ^(.*)$ http://www.indanielweb.es/$1 [L,R=301]
-RewriteCond %{HTTP_HOST} ^indanielweb.com [NC]
-RewriteRule ^(.*)$ http://www.indanielweb.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^sunyogamoon.es [NC]
+RewriteRule ^(.*)$ http://www.sunyogamoon.es/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^sunyogamoon.com [NC]
+RewriteRule ^(.*)$ http://www.sunyogamoon.com/$1 [L,R=301]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

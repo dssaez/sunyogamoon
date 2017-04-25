@@ -105,11 +105,14 @@ function GoAboutme(){
 }
 
 function CheckWindowSize(){
+        if (window.innerWidth >= 850){
+                jQuery('nav').appendTo('#Big_Nav');
+        }
         $(window).resize(function(){
-                if (window.innerWidth >= 680)
-                        $('nav').fadeIn();
+                if (window.innerWidth >= 850)
+                        jQuery('nav').appendTo('#Big_Nav');
                 else
-                        $('nav').hide();
+                        jQuery('nav').appendTo('#Menu');
         });
 }
 

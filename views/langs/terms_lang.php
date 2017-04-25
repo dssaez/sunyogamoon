@@ -9,9 +9,9 @@
                         'ogurl' => 'http://www'.DOMAIN,
                         'title' => 'terminos y condiciones',
                         // ## TERMINOS Y CONDICIONES ## //
-                        'Nombre_web' => 'indanielweb',
-                        'URL_web' => 'indanielweb.es',
-                        'Email' => 'daniel@indanielweb.com',
+                        'Nombre_web' => 'sunyogamoon',
+                        'URL_web' => 'sunyogamoon.es',
+                        'Email' => 'dssaez@gmail.com',
                         // ## TERMINOS Y CONDICIONES ## //
                         'body' => 'langs/terms_es',
                 ),
@@ -24,9 +24,9 @@
                         'ogurl' => 'http://www'.DOMAIN,
                         'title' => 'terms and conditions',
                         // ## TERMINOS Y CONDICIONES ## //
-                        'Nombre_web' => 'indanielweb',
-                        'URL_web' => 'indanielweb.com',
-                        'Email' => 'daniel@indanielweb.com',
+                        'Nombre_web' => 'sunyogamoon',
+                        'URL_web' => 'sunyogamoon.com',
+                        'Email' => 'dssaez@gmail.com',
                         // ## TERMINOS Y CONDICIONES ## //
                         'body' => 'langs/terms_en',
                 ),

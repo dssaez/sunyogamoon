@@ -4,7 +4,7 @@ html {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 4vw;
 }
 body{
@@ -13,6 +13,7 @@ body{
         width: 100%;
         text-align: center;
         color: #002e63;
+        background: #ddd url(../img/fabric_plaid.png) repeat top left;
 }
 a{
         outline:0px;
@@ -20,28 +21,37 @@ a{
         color: #002e63;
 }
 a:hover{
-        color: orange;
+        color: #FF6600;
 }
+
 nav{
-        display: none;
         position: absolute;
+        display: none;
         text-align: center;
         top: 4.3rem;
-        left: 5.1rem;
-        width: 6rem;
 }
 nav ul{
         margin: 0;
         padding: 0;
         display: inline-block;
+        text-align: center;
 }
 nav ul li{
         list-style: none;
         margin-bottom: 0.8rem;
+        width: 16rem;
 }
 header{
         z-index: 4;
-        height: 3.5rem;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
+        background: #f0f9ff; /* Old browsers */
+        background: -moz-linear-gradient(top,  #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); /* IE6-9 */
+        padding: 5rem 0 1rem 0;
+        border-bottom: 1px solid rgb(179, 178, 175);
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
 }
 figure{
         margin: 0;
@@ -140,6 +150,18 @@ figure{
                 font-style: normal;
         }
         /* ####### SEO ######### */
+.Picture{
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+}
+.Picture img{
+        border-right-width: 1px;
+	border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid;
+	border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
+	border-top-color: rgb(252, 224, 130); border-right-color: rgb(252, 224, 130);
+	border-bottom-color: rgb(252, 224, 130); border-left-color: rgb(252, 224, 130);
+}
 /* ####### COMUN ######### */
 
 /*######## FORMS #########*/
@@ -232,46 +254,14 @@ figure{
 
 /*######## FORMS #########*/
 
-/* ####### LOGO ######### */
-.Logo_Box_Nav{
-        position: fixed;
-        z-index: 10;
-        width: 100%;
-}
-.Logo_Box{
-        position: absolute;
-        z-index: 4;
-        background: white;
-        left: 0.4rem;
-        box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
-        width: 5.4rem;
-        margin: 0;
-        padding: 0.3rem 0 0.3rem 0;
-        text-align: center;
-}
-.Logo_Box figure{
-        margin: 0;
-        display: inline-block;
-}
-.Logo_Box figure img{
-        width: 2.2rem;
-        margin: 0;
-}
-.Logo_Box figcaption{
-        color: #002e63;
-        font-size: 0.5rem;
-        margin: 0;
-}
-.Logo_Box figcaption:last-of-type{
-        display: none;
-}
-/* ####### LOGO ######### */
-
 /* ####### BOX NAV ######### */
 .Box_Nav{
-        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 18rem;
         z-index: 10;
-        right: 0.4rem;
         padding: 0 10px 0 10px;
         background: white;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
@@ -286,7 +276,7 @@ figure{
 }
 .Box_Nav a{
         text-decoration: none;
-        color: #002e63;
+        color: #00BAF2;
         font-size: 1.2rem;
 }
 .Box_Nav a:hover{
@@ -304,14 +294,14 @@ figure{
         width: 1rem;
 }
 .Menu p{
-        color: #002e63;
+        color: #00BAF2;
         margin: 0;
         display: inline-block;
 }
 .Contactame{
         position: relative;
         display: inline-block;
-        background:#002e63;
+        background: #00BAF2; /* Old browsers */
         padding: 0.7rem;
         -webkit-border-bottom-left-radius: 1.3rem;
         -moz-border-bottom-right-radius: 1.3rem;
@@ -334,7 +324,7 @@ figure{
 }
 .ContactameBefore{
         position: absolute;
-        background:#002e63;
+        background: #00BAF2; /* Old browsers */
         top: 0;
         left: -20px;
         width: 20px;
@@ -353,7 +343,7 @@ figure{
 }
 .ContactameAfter{
         position: absolute;
-        background:#002e63;
+        background: #00BAF2; /* Old browsers */
         top: 0;
         right: -20px;
         width: 20px;
@@ -362,6 +352,9 @@ figure{
 .Contactame a{
         margin: 0;
         color: white;
+}
+.Contactame a:hover{
+        color: #002e63;
 }
 .Contactame p{
         color: orange;
@@ -378,7 +371,7 @@ figure{
         font-size: 0.7rem;
 }
 .Lang p{
-        color: #002e63;
+        color: #00BAF2;
         margin: 0;
         display: inline-block;
 }
@@ -416,6 +409,22 @@ figure{
         display: none;
 }
 /* ####### BOX NAV ######### */
+
+/* ####### LOGO ######### */
+.AfterLogo{
+        margin-top: -1.2rem;
+}
+.AfterLogo h1{
+        color: #00BAF2;
+        font-size: 3rem;
+        margin: 0.2rem 0 1rem 0;
+}
+.AfterLogo h2{
+        color: #00BAF2;
+        font-size: 1.5rem;
+        margin: 0.2rem 0 0.2rem 0;
+}
+/* ####### LOGO######### */
 
 /* ####### BOX MANAGER ######### */
 .BoxManager{
@@ -488,7 +497,8 @@ figure{
 footer{
         width: 100%;
         height: 4rem;
-        background: #07a4c6;
+        background: #00BAF2;
+        color: #FFFFFF;
 }
 footer section{
         display: inline-block;
@@ -533,7 +543,7 @@ footer section:nth-of-type(2){
         clear: both;
         display: inline-block;
         color: white;
-        margin: 0.5rem;
+        margin: 0rem;
         font-size: 0.7rem;
 }
 .Informacion a{
@@ -544,236 +554,6 @@ footer section:nth-of-type(2){
         color: black;
 }
 /* ####### FOOTER ######### */
-
-/* ####### HOME ######### */
-/* PRIMERA SECCIÓN */
-.Home_Header{
-        position: relative;
-        width: 100%;
-        height: 12rem;
-        background: #07a4c6;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#07a4c6+0,93bcc4+100 */
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#07a4c6+0,3eaec1+100 */
-        background: #07a4c6; /* Old browsers */
-        background: -moz-linear-gradient(top, #07a4c6 0%, #3eaec1 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #07a4c6 0%,#3eaec1 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #07a4c6 0%,#3eaec1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07a4c6', endColorstr='#3eaec1',GradientType=0 ); /* IE6-9 */}
-.Home_Header h2:first-of-type{
-        margin-top: 1.4rem;
-}
-.Home_Header h2{
-        color: white;
-        margin: 0;
-        margin-top: 0.4rem;
-        font-size: 1.8rem;
-        font-weight: normal;
-}
-/* PRIMERA SECCIÓN */
-
-/* SEGUNDA SECCIÓN */
-.Servicios{
-        text-align: center;
-        margin-top: 1.5rem;
-        background: white;
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
-        width: 100%;
-}
-.Article_Servicio{
-        display: inline-block;
-        text-align: center;
-        margin-right: 0rem;
-        margin-left: 0rem;
-        margin-top: 1rem;
-}
-.Article_Servicio a{
-
-        color: #002e63;
-}
-.Article_Servicio a figure img{
-        width: 3rem;
-}
-.Article_Servicio a figure figcaption{
-        font-size: 1rem;
-}
-.Layer1_Services{
-        display: block;
-}
-.Layer1_Services article{
-        width: 10.5rem;
-}
-.Layer2_Services{
-        display: block;
-}
-.Layer2_Services article{
-        width: 7.5rem;
-}
-
-/* SEGUNDA SECCIÓN */
-
-/* TERCERA SECCIÓN */
-.Features{
-        position: relative;
-        display: block;
-        margin: 12rem 3% 2rem 3%;
-        background: white;
-        box-shadow: 2px 2px 6px 1px rgba(202, 202, 204,0.8);
-        border: 1px solid rgba(179, 178, 175,0.3);
-        width: 94%;
-}
-.Article_Features ul{
-        color: #07a4c6;
-        text-align: left;
-        font-weight: bold;
-        font-size: 1.1rem;
-        margin-right: 0.5rem;
-        display: block;
-}
-.Article_Features ul li{
-        margin-top: 0.5rem;
-}
-.Article_Features{
-        display: inline-block;
-}
-.Article_Features figure{
-        display: block;
-}
-.Article_Features figure img{
-        width: 18rem;
-}
-.Responsive_Fake{
-        display: none;
-}
-/* TERCERA SECCIÓN */
-
-/* ####### HOME ######### */
-
-/* ####### SOBRE MI ####sobremi###### */
-.Header_Sobre_Mi{
-        position: relative;
-        width: 100%;
-        height: 4rem;
-}
-.Label_Sobre_Mi{
-        position: absolute;
-        background: #07a4c6;
-        padding: 0.2rem 0.9rem 0.2rem 0.9rem;
-        z-index: 4px;
-        box-shadow: 2px 2px 6px 1px rgba(202, 202, 204,0.8);
-        border: 1px solid rgba(179, 178, 175,0.3);
-        top: -1rem;
-        left: 50%;
-        transform: translateX(-50%);
-}
-.Label_Sobre_Mi p{
-        margin: 0;
-        font-size: 1.2rem;
-}
-.Sobre_Mi{
-        position: relative;
-        display: block;
-        margin: -0.5rem 3% 2rem 3%;
-        background: white;
-        box-shadow: 2px 2px 6px 1px rgba(202, 202, 204,0.8);
-        border: 1px solid rgba(179, 178, 175,0.3);
-        width: 94%;
-        text-align: left;
-        margin-top: -1rem;
-}
-.Article_Sobre_Mi{
-        margin: 1.5rem 0.5rem 1rem 0.5rem;
-}
-.Article_Sobre_Mi p{
-        color: #002e63;
-        font-size: 1rem;
-        margin-left: 0.3rem;
-        margin-right: 0.3rem;
-}
-.Article_Sobre_Mi figure{
-        border: 1px solid #07a4c6;
-        margin: 0.5rem;
-}
-.Article_Sobre_Mi figure:nth-of-type(2) img{
-        width: 12rem;
-}
-.Buttons_SobreMi{
-        display: block;
-        width: 100%;
-        text-align: center;
-}
-.Buttons_SobreMi a{
-        margin: 0.5rem 0.7rem 1.5rem 0.7rem;
-}
-/* ####### SOBRE MI ######### */
-
-/* ####### SERVICES ######### */
-.Services_Header{
-        position: relative;
-        width: 100%;
-        padding-bottom: 2rem;
-        background: #07a4c6;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#07a4c6+0,93bcc4+100 */
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#07a4c6+0,3eaec1+100 */
-        background: #07a4c6; /* Old browsers */
-        background: -moz-linear-gradient(top, #07a4c6 0%, #3eaec1 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #07a4c6 0%,#3eaec1 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #07a4c6 0%,#3eaec1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07a4c6', endColorstr='#3eaec1',GradientType=0 ); /* IE6-9 */}
-.Services_Header p:first-of-type{
-        margin-top: 1.4rem;
-}
-.Services_Header p{
-        color: white;
-        margin: 0;
-        margin-top: 0.4rem;
-        font-size: 1.4rem;
-}
-.Header_Span{
-        display: inline-block;
-        margin-top: 0.2rem;
-}
-.Service_Desc{
-        position: relative;
-        display: inline-block;
-        margin: -0.5rem 3% 2rem 3%;
-        padding: 0 0.5rem 0 0.5rem;
-        background: white;
-        box-shadow: 2px 2px 6px 1px rgba(202, 202, 204,0.8);
-        border: 1px solid rgba(179, 178, 175,0.3);
-        text-align: left;
-        margin-top: -1rem;
-}
-.Service_Desc h1{
-        color: #07a4c6;
-        font-size: 1.1rem;
-        font-weight: normal;
-}
-.Service_Desc h2{
-        color: #07a4c6;
-        font-size: 1.1rem;
-        font-weight: normal;
-}
-.Service_Desc p:first-of-type{
-        color: #07a4c6;
-        font-size: 1.1rem;
-}
-.Service_Desc p{
-        color: #002e63;
-        font-size: 1rem;
-}
-.Service_Desc figure{
-        float: right;
-}
-.Service_Desc figure img{
-        width: 3rem;
-}
-.Remember p{
-        margin: -0.5rem 3% 2rem 3%;
-        color: #07a4c6;
-        font-size: 1.2rem;
-}
-/* ####### SERVICES ######### */
 
 /* ####### TERMS ######### */
 .Terms{
@@ -811,233 +591,172 @@ footer section:nth-of-type(2){
 }
 /* ####### TERMS ######### */
 
-@media screen and (min-width: 480px){
+.Content{
+        margin: 0 0.5rem 0 0.5rem;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: normal;
+        box-shadow: 1px 1px 4px rgb(202, 202, 204);
+        background: white;
+        padding: 1rem;
+         font-family: sans-serif;
+}
+
+/* ####### HOME ######### */
+.Figuras{
+        margin-top: 1rem;
+        text-align: center;
+}
+.Figuras figure{
+        display: inline-block;
+}
+.HomeFirst span a{
+        text-decoration: underline;
+}
+/* ####### HOME ######### */
+
+@media screen and (min-width: 360px){
         html {
-          font-size: 18px;
+          font-size: 15px;
         }
 }
-@media screen and (min-width: 532px){
-        .Features{
-                margin-top: 10rem;
+@media screen and (min-width: 480px){
+        .Figuras figure{
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
         }
 }
 @media screen and (min-width: 600px){
-        .Logo_Box figure img{
-                width: 3rem;
+        .floatright{
+                float: left;
         }
-        .Home_Header p{
-                font-size: 1.6rem;
-        }
-        .Services_Header{
-                padding-top: 0.5rem;
-        }
-        .Services_Header p{
-                font-size: 1.6rem;
-        }
-        .Features{
-                margin-top: 10rem;
-        }
-        .Article_Servicio{
-                margin-right: 1rem;
-                margin-left: 1rem;
+        .Content{
+                text-align: left;
         }
 }
 
-@media screen and (min-width: 680px){
-        .Form_Sobre img{
-                width: 4rem;
+@media screen and (min-width: 710px){
+        .Logo{
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 2rem 0 2rem;
+        }
+        .AfterLogo{
+                display: inline-block;
+                margin-top: 1rem;
+                margin: 0 2rem 0 2rem;
+        }
+}
+@media screen and (min-width: 850px){
+        header{
+                padding-top: 0.5rem;
+                padding-bottom: 0;
+                text-align: center;
+        }
+        .Figuras{
+                margin-top: 2rem;
+        }
+        .Figuras img{
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+        }
+        .Box_Nav{
+                width: 25rem;
+                margin-left: 11.3rem;
+        }
+        .Logo{
+                margin-top: 1.2rem;
+        }
+        .AfterLogo{
+                margin-top: 3rem;
         }
         #Menu{
                 display: none;
         }
-        #Close_Menu{
-                display: none;
-        }
         nav{
-                position: relative;
                 display: block;
-                display: inline-block;
-                text-align: center;
-                width: 100%;
-                top: 0;
-                left: 0;
-        }
-        nav ul{
-                margin: 0;
-                padding: 0;
-                display: inline-block;
+                position: relative;
+                top: 1.2rem;;
         }
         nav ul li{
                 display: inline-block;
-                list-style: none;
-                margin-left: 0.6rem;
-                margin-right: 0.6rem;
+                width: auto;
+                margin: 0 1.9rem 0 1.9rem;
+                font-size: 1.2rem;
+                vertical-align: top;
         }
-        .Home_Header p{
-                font-size: 1.8rem;
+        .Nav_Selected{
+                color: #FF6600;
+                font-size: 1.6rem;
         }
-        .Services_Header p{
-                font-size: 1.8rem;
+        #Close_Menu{
+                display: none;
         }
-        .Header_Span_b{
+        .Big_Nav{
                 display: block;
-        }
-}
-@media screen and (min-width: 750px){
-        .Logo_Box{
-                width: 10rem;
-        }
-        .Logo_Box figcaption:last-of-type{
-                display: block;
-        }
-}
-@media screen and (min-width: 850px){
-        .Whole_Form{
-                width: 40rem;
-        }
-        .HV_Line{
-                display: inline-block;
-                background: #07a4c6;
-                height: 15rem;
-                width: 1px;
-                margin: 1rem 1rem 0.5rem 1rem;
-                vertical-align: top;
-                margin-top: 3rem;
-        }
-        .Left_Form{
-                width: 15rem;
-                vertical-align: top;
-        }
-        .Right_Form{
-                vertical-align: top;
-        }
-        .Article_Sobre_Mi figure:nth-of-type(2) img{
-                width: 17rem;
-        }
-        .Logo_Box_Nav{
+                position: relative;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 850px;
-        }
-        .Home_Header{
-                height: 12.5rem;
-        }
-        .Servicios{
-                margin-top: 4rem;
-        }
-        .Article_Servicio{
-                position: relative;
-                display: inline-block;
-                margin-right: 0rem;
-                margin-left: 0rem;
-                margin-top: -2.2rem;
-        }
-        .Article_Servicio a{
-                position: relative;
-                z-index: 4;
-                top: 0.5rem;
-                text-decoration: none;
-        }
-        .Article_Servicio a figure img{
-                width: 2.3rem;
-        }
-        .Esfera{
-                position: absolute;
                 background: white;
-                border-radius: 5rem;
-                width: 5rem;
-                height: 5rem;
+                width: 50rem;
+                height: 4rem;
+                border-radius: 4rem;
+                bottom: -1.9rem;
+                box-shadow: 2px 2px 8px rgb(202, 202, 204);
+                border: 1px solid rgba(179, 178, 175, 0.7);
+        }
+        .HomeFirst{
+                display: inline-block;
+                position: relative;
                 left: 50%;
                 transform: translateX(-50%);
         }
-        .Features{
-                margin-top: 4rem;
-        }
-        .Layer1_Services{
+        .HomeFirst span{
                 display: inline-block;
-        }
-        .Layer1_Services article{
-                width: 9.8rem;
-        }
-        .Layer2_Services{
-                display: inline-block;
-        }
-        .Layer2_Services article{
-                width: 8.5rem;
-        }
-        .Article_Features figure img{
-                width: 20rem;
-        }
-        .Responsive_Fake{
-                display: block;
-                float: right;
-                width: 20rem;
-                height: 10rem;
-                margin-top: 3rem;
-                margin-left: 2rem;
-        }
-        .Article_Features figure{
-                position: absolute;
-                float: right;
-                top: 3rem;
-                right: 2rem;
-        }
-}
-@media screen and (min-width: 950px){
-        .Layer1_Service_Desc{
-                display: block;
-        }
-        .Layer1_Service_Desc article:first-of-type{
-                width: 26rem;
-                height: 14.2rem;
-        }
-        .Layer1_Service_Desc article{
-                display: inline-block;
-                width: 17rem;
-                height: 14.2rem;
+                clear: both;
+                width: 24rem;
                 vertical-align: top;
+                margin: 0 1rem 0 1rem;
         }
-        .Layer2_Service_Desc{
-                display: block;
-        }
-        .Layer2_Service_Desc article{
+        .HomeSecond{
                 display: inline-block;
-                width: 15rem;
-                height: 17rem;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+        }
+        .HomeSecond span{
+                display: inline-block;
+                clear: both;
+                width: 24rem;
                 vertical-align: top;
-                margin-right: 0.4rem;
-                margin-left: 0.4rem;
-        }
-        .Layer1_Services article{
-                width: 10rem;
-        }
-        .Layer2_Services article{
-                width: 10rem;
-        }
-}
-@media screen and (min-width: 1150px){
-        .Logo_Box_Nav{
-                width: 950px;
-        }
-        .Features{
-                width: 1100px;
-                display: inline-block;
-        }
-        .Sobre_Mi{
-                width: 1100px;
-                display: inline-block;
-        }
-        .Article_Servicio{
-                margin-right: 0.5rem;
-                margin-left: 0.5rem;
+                margin: 0 1rem 0 1rem;
         }
 }
 
-@media screen and (min-width: 1300px){
-        .Big_Screens{
-                display: inline-block;
-                width: 1300px;
-                border-right: 1px solid rgb(199, 195, 195);
-                border-left: 1px solid rgb(199, 195, 195);
+@media screen and (min-width: 1000px){
+        .HomeFirst span{
+                width: 28rem;
+        }
+        .HomeSecond span{
+                width: 28rem;
+        }
+}
+
+@media screen and (min-width: 1200px){
+        .HomeFirst span{
+                width: 30rem;
+        }
+        .HomeSecond span{
+                width: 30rem;
+        }
+        .Content{
+                margin: 0 1rem 0 1rem;
+        }
+        .Inside{
+                display: block;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 1200px;
         }
 }
