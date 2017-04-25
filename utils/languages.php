@@ -15,9 +15,21 @@ define('LANG_PAGES', array(
                 'es' => '',
                 'en' => '',
         ),
-        'services' => array(
-                'es' => 'servicios',
-                'en' => 'services'
+        'YogaTenerife' => array(
+                'es' => 'YogaTenerife',
+                'en' => 'YogaTenerife'
+        ),
+        'MasajeTailandesTenerife' => array(
+                'es' => 'MasajeTailandesTenerife',
+                'en' => 'ThaiMassageTenerife'
+        ),
+        'YogaMasajeTerapiaTenerife' => array(
+                'es' => 'YogaMasajeTerapiaTenerife',
+                'en' => 'TherapyYogaMassageTenerife'
+        ),
+        'YogaGaleria' => array(
+                'es' => 'YogaGaleria',
+                'en' => 'YogaGallery'
         ),
         'terms' => array(
                 'es' => 'terminosycondiciones',

@@ -22,7 +22,7 @@
                         </figure>
                 </div>
 
-                <section>
+                <section class="Home_sec">
                         <article class="">
                                 <p>
                                         Siguiendo la tradición de Iyengar y guiados por las enseñanzas de
@@ -32,7 +32,7 @@
                                         compartir su experiencia con todos aquellos que quieran aprender
                                         acerca de Hatha Yoga y <strong class="strongnormal"> Masaje Tailandés</strong>.
                                 </p>
-                                <figure class="Picture floatright">
+                                <figure class="Picture HomePic">
                                         <img src="img/tenerife.jpg" alt="yoga en tenerife">
                                 </figure>
                                 <p>
@@ -92,23 +92,13 @@
                                         <p><a href="YogaMasajeTerapiaTenerife">Leer más ...</a></p>
                                 </span>
                         </div>
-                        <div class="HomeSecond">
-                                <span>
-
-                                </span>
-                                <span>
-
-                                </span>
-                        </div>
                 </aside>
         </div>
 </div>
 
 <script type="text/javascript">
-        document.getElementById("Concoceme_a").onclick = function() {
-                var posicion =$("#Sobre_Mi").offset().top;
-                posicion = posicion - 150;
-                $("html, body").animate({scrollTop: $('#Sobre_Mi').offset().top -90 }, 1000);
-                return false;
+        function Select_Nav(){
+                $( "#HomeNav" ).addClass( "Nav_Selected" );
         }
+        addOnLoad(Select_Nav);
 </script>

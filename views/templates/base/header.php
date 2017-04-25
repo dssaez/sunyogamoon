@@ -17,11 +17,11 @@
                         </script>
                         <nav>
                                 <ul>
-                                        <li><a class="Nav_Selected" href="<?php echo $Template_Langs['Home_a']; ?>"><?php echo $Template_Langs['Home']; ?></a></li>
-                                        <li><a href="<?php echo $Template_Langs['Yoga_a']; ?>"><?php echo $Template_Langs['Yoga']; ?></a></li>
-                                        <li><a href="<?php echo $Template_Langs['Masaje_Tailandes_a']; ?>"><?php echo $Template_Langs['Masaje_Tailandes']; ?></a></li>
-                                        <li><a href="<?php echo $Template_Langs['Terapia_a']; ?>"><?php echo $Template_Langs['Terapia']; ?></a></li>
-                                        <li><a href="<?php echo $Template_Langs['Galeria_a']; ?>"><?php echo $Template_Langs['Galeria']; ?></a></li>
+                                        <li><a id="HomeNav" href="<?php echo $Template_Langs['Home_a']; ?>"><?php echo $Template_Langs['Home']; ?></a></li>
+                                        <li><a id="YogaNav" href="<?php echo $Template_Langs['Yoga_a']; ?>"><?php echo $Template_Langs['Yoga']; ?></a></li>
+                                        <li><a id="MasajeNav" href="<?php echo $Template_Langs['Masaje_Tailandes_a']; ?>"><?php echo $Template_Langs['Masaje_Tailandes']; ?></a></li>
+                                        <li><a id="TerapiaNav" href="<?php echo $Template_Langs['Terapia_a']; ?>"><?php echo $Template_Langs['Terapia']; ?></a></li>
+                                        <li><a id="GaleriaNav" href="<?php echo $Template_Langs['Galeria_a']; ?>"><?php echo $Template_Langs['Galeria']; ?></a></li>
                                 </ul>
                                 <a id="Close_Menu" href="/" class="Triangulo_BoxMenu">
                                         <div class="Triangulo_Lang_Up">

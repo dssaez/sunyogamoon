@@ -156,6 +156,7 @@ figure{
         margin-right: 1rem;
 }
 .Picture img{
+        width: 20rem;
         border-right-width: 1px;
 	border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid;
 	border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
@@ -592,6 +593,7 @@ footer section:nth-of-type(2){
 /* ####### TERMS ######### */
 
 .Content{
+        position: relative;
         margin: 0 0.5rem 0 0.5rem;
         text-align: center;
         font-size: 1.1rem;
@@ -615,6 +617,21 @@ footer section:nth-of-type(2){
 }
 /* ####### HOME ######### */
 
+/* ####### TERAPIA ######### */
+.Terapia-Sec2{
+        clear: both;
+        text-align: center;
+        margin: 2rem;
+}
+.Terapia-Sec2 p{
+        font-weight: bold;
+        font-size: 0.9rem;
+}
+.Precios{
+        display: inline-block;
+}
+/* ####### TERAPIA ######### */
+
 @media screen and (min-width: 360px){
         html {
           font-size: 15px;
@@ -627,8 +644,42 @@ footer section:nth-of-type(2){
         }
 }
 @media screen and (min-width: 600px){
-        .floatright{
+        .Picture{
                 float: left;
+        }
+        .TerapiaPic img{
+                width: 15rem;
+        }
+        .Yoga-Sec1 h2{
+                margin-top: 3rem;
+                text-align: center;
+        }
+        .Yoga-Sec2 h2{
+                margin-top: 3rem;
+                text-align: center;
+        }
+        .Yoga-Sec3 h2{
+                clear: both;
+                margin-top: 5rem;
+                text-align: center;
+        }
+        .Yoga-Sec3 a{
+                text-decoration: underline;
+        }
+        .Masaje-Sec1 h2{
+                margin-top: 3rem;
+                text-align: center;
+        }
+        .Masaje-Sec2 h2{
+                margin-top: 2rem;
+        }
+        .Masaje-Sec3 h2{
+                clear: both;
+                margin-top: 2rem;
+                text-align: center;
+        }
+        .Masaje-Sec3 a{
+                text-decoration: underline;
         }
         .Content{
                 text-align: left;
@@ -636,6 +687,9 @@ footer section:nth-of-type(2){
 }
 
 @media screen and (min-width: 710px){
+        .Content{
+                font-size: 1rem;
+        }
         .Logo{
                 display: inline-block;
                 vertical-align: top;
@@ -661,8 +715,14 @@ footer section:nth-of-type(2){
                 margin-right: 1.5rem;
         }
         .Box_Nav{
-                width: 25rem;
+                width: 14rem;
                 margin-left: 11.3rem;
+        }
+        .Contactame{
+                margin-left: 1rem;
+        }
+        .Lang{
+                margin-left: 0.5rem;
         }
         .Logo{
                 margin-top: 1.2rem;
@@ -695,6 +755,7 @@ footer section:nth-of-type(2){
         .Big_Nav{
                 display: block;
                 position: relative;
+                z-index: 2;
                 left: 50%;
                 transform: translateX(-50%);
                 background: white;
@@ -757,6 +818,6 @@ footer section:nth-of-type(2){
                 position: relative;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 1200px;
+                width: 1100px;
         }
 }
